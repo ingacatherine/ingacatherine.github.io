@@ -1,0 +1,102 @@
+h1{
+    color:white;
+    font-family: karrik;
+    font-size: 40pt;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    width: 90%;
+    padding: 5px;
+    border: 5px;
+    margin: 20px;
+    float: center;
+    clear: both;
+}
+
+h2{
+    color:white;
+    font-family: karrik;
+    font-size: 32pt;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    width: 90%;
+    padding: 5px;
+    border: 5px;
+    margin: 20px;
+    float: center;
+    clear: both;
+}
+
+
+p {
+color:white;
+font-family: karrik;
+font-size: 24pt;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+line-height: 1.1;
+width: 90%;
+padding: 5px;
+border: 5px;
+margin: 20px;
+float: left;
+clear: both;
+}
+
+a {
+color:aquamarine;
+font-family: karrik;
+font-size: 24pt;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+width: 100%;
+padding: 5px;
+border: 5px;
+margin: 40px;
+clear: both;
+}
+
+#afloatleft {
+    float: left;
+    width: 0em;
+}
+
+#afloatright {
+    float: right;
+    width: 0em;
+}
+
+#aexcludefromrules {
+padding: 0px;
+border: 0px;
+margin: 0px;
+width: 20%;
+}
+
+a:hover {
+color:beige;
+}
+
+body {
+    background-image: url("../../images/kettepng-ohnekette.png");
+}
+
+img {
+    width: 100%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+#bluetext {
+    color: blue;
+}
+
+div {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
