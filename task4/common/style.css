@@ -1,0 +1,131 @@
+h1{
+    color:white;
+    font-family: karrik;
+    font-size: 40pt;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    width: 90%;
+    padding: 5px;
+    border: 5px;
+    margin: 10px;
+    float: center;
+    clear: both;
+}
+
+h2{
+    color:white;
+    font-family: karrik;
+    font-size: 32pt;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    width: 90%;
+    padding: 5px;
+    border: 5px;
+    margin: 20px;
+    float: center;
+    clear: both;
+}
+
+
+p {
+color:white;
+font-family: karrik;
+font-size: 24pt;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+line-height: 1.1;
+width: 90%;
+padding: 5px;
+border: 5px;
+margin: 20px;
+float: left;
+clear: both;
+}
+
+
+img {
+    width: 100%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+.trapezoid-empty {
+    width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid blueviolet;
+}
+
+.trapezoid {
+    border-bottom: 100px solid red;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 150px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue;
+}
+
+.rectangle1 {
+    width: 50px;
+    height: 200px;
+    background: red;
+}
+
+.rectangle2 {
+    width: 50px;
+    height: 200px;
+    background: red;
+    transform: skewX(20deg);
+}
+
+.rectangle3 {
+    width: 50px;
+    height: 200px;
+    background: red;
+    transform: skewX(-20deg);
+}
+
+
+body {
+    background-color: blueviolet;
+}
+
+.ellipse1 {
+    width: 100px;
+      height: 120px;
+      background: blueviolet;
+      border-radius: 100px / 50px;
+      float:center;
+}
+
+.ellipse2 {
+    width: 100px;
+      height: 120px;
+      background: #00ffb3;
+      border-radius: 100px / 50px;
+      float:center;
+}
+
+
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    float: clear;
+  }
+
+ 
