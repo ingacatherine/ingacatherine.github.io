@@ -1,4 +1,4 @@
-h1{
+h1 {
     color:white;
     font-family: karrik;
     font-size: 40pt;
@@ -11,9 +11,10 @@ h1{
     margin: 10px;
     float: center;
     clear: both;
+    
 }
 
-h2{
+h2 {
     color:white;
     font-family: karrik;
     font-size: 32pt;
@@ -30,18 +31,18 @@ h2{
 
 
 p {
-color:white;
-font-family: karrik;
-font-size: 24pt;
--webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: black;
-line-height: 1.1;
-width: 90%;
-padding: 5px;
-border: 5px;
-margin: 20px;
-float: left;
-clear: both;
+    color:white;
+    font-family: karrik;
+    font-size: 24pt;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    line-height: 1.1;
+    width: 90%;
+    padding: 5px;
+    border: 5px;
+    margin: 20px;
+    float: left;    
+    clear: both;
 }
 
 
@@ -53,12 +54,37 @@ img {
     float: center;
 }
 
+#wrapper_h1 {
+    position: absolute;
+    top: 30px;
+    bottom:30px;
+    transition-property: background-color;
+    transition-duration: 800ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 300ms;
+}
+
+.wrapper_content {
+    position: relative;
+    height: 1300px;
+    width: 1300px;
+}
+
+.wrapper_red_m {
+    position: absolute;
+    top: 30px;
+    bottom:30px;
+    height: 30px;
+    width: 30px;
+    overflow: scroll;
+}
+
 .trapezoid-empty {
     width: 0;
-      height: 0;
-      border-left: 50px solid transparent;
-      border-right: 50px solid transparent;
-      border-bottom: 100px solid blueviolet;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blueviolet;
 }
 
 .trapezoid {
@@ -68,6 +94,31 @@ img {
     height: 0;
     width: 150px;
 }
+
+.wrapper_blue_m {
+   position: absolute;
+   top: 0px;
+   bottom: 0px;
+}
+
+ .wrapper_purple_m {
+    position: absolute;
+    top: 30px;
+    bottom:30px;
+}
+
+ .wrapper_green_m {
+    position: absolute;
+    top: 30px;
+    bottom:30px;
+}
+
+ .wrapper_small_m {
+    position: absolute;
+    top: 30px;
+    bottom:30px;
+}
+      
 
 .triangle {
     width: 0;
@@ -104,18 +155,18 @@ body {
 
 .ellipse1 {
     width: 100px;
-      height: 120px;
-      background: blueviolet;
-      border-radius: 100px / 50px;
-      float:center;
+    height: 120px;
+    background: blueviolet;
+    border-radius: 100px / 50px;
+    float:center;
 }
 
 .ellipse2 {
     width: 100px;
-      height: 120px;
-      background: #00ffb3;
-      border-radius: 100px / 50px;
-      float:center;
+    height: 120px;
+    background: #00ffb3;
+    border-radius: 100px / 50px;
+    float:center;
 }
 
 
@@ -126,6 +177,19 @@ body {
     background-color: #bbb;
     border-radius: 50%;
     float: clear;
+}
+
+.wrapper_h1:hover {
+    background-color: violet;
+    cursor: pointer;
   }
 
- 
+.trapezoid:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+.trapezoid-empty:hover {
+    background-color: orange;
+    cursor: pointer;
+}
