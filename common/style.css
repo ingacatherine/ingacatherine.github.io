@@ -1,0 +1,107 @@
+#darkmode {
+    margin: 20px;
+    display: flex;
+    width: 180px;
+    justify-content: center;
+    height: 53px;
+    line-height: 100px;
+    align-items: center;
+    font-family: karrik;
+    text-align: center;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body.darkmode {
+    background: black;
+    color: white;
+    --accent-color: white;
+}
+
+
+button {
+    appearance: auto;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    writing-mode: horizontal-tb !important;
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+
+h1 {
+    display: block;
+    color:white;
+    font-family: karrik;
+    font-size: 40pt;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    width: 90%;
+    padding: 5px;
+    border: 5px;
+    margin: 10px;
+    float: center;
+    clear: both;
+    
+}
+
+
+p {
+    color:white;
+    font-family: karrik;
+    font-size: 24pt;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    line-height: 1.1;
+    width: 90%;
+    padding: 5px;
+    border: 5px;
+    margin: 20px;
+    float: left;    
+    clear: both;
+}
+
+
+img {
+    width: 100%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+.background {
+    background-image: url("../img/Scanned-Hand.png");
+    background-size: contain;
+    background-size: no-repeat;
+    width: 1920px;
+    height: 1080px;
+    border: solid 2px red;
+  }
+
+
+.
+
