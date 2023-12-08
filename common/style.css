@@ -1,33 +1,41 @@
-#darkmode {
-    margin: 20px;
-    display: flex;
-    width: 180px;
-    justify-content: center;
-    height: 53px;
-    line-height: 100px;
-    align-items: center;
-    font-family: karrik;
-    text-align: center;
-    background: white;
-    color: black;
-    text-decoration: none;
-    border: 2px solid black;
-    border-radius: 40px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-body.darkmode {
-    background: black;
+/* source darkmode/lightmode: https://www.geeksforgeeks.org/how-to-make-dark-mode-for-websites-using-html-css-javascript/# */
+
+.dark-mode {
+    background-image: url("../img/Scanned-Hand.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100%;
     color: white;
-    --accent-color: white;
 }
 
+.light-mode {
+    background-image: url("../img/Scanned-Hand-bright.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100%;
+    color: black;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
 
 button {
     appearance: auto;
     text-rendering: auto;
-    color: buttontext;
+    border-radius: 20px;
+    font-size: 40pt;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+    color: green;
     letter-spacing: normal;
     word-spacing: normal;
     line-height: normal;
@@ -37,11 +45,11 @@ button {
     display: inline-block;
     text-align: center;
     align-items: flex-start;
-    cursor: default;
+    cursor: help;
     box-sizing: border-box;
-    background-color: buttonface;
+    background-color: blueviolet;
     writing-mode: horizontal-tb !important;
-    margin: 0em;
+    margin: 0.2em;
     padding-block: 1px;
     padding-inline: 6px;
     border-width: 2px;
@@ -50,14 +58,19 @@ button {
     border-image: initial;
 }
 
+button:hover {
+    cursor:grabbing;
+    background-color:yellow;
+}
+
 
 h1 {
     display: block;
-    color:white;
+    color:rgb(255, 66, 252);
     font-family: karrik;
-    font-size: 40pt;
+    font-size: 80pt;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: white;
     text-align: center;
     width: 90%;
     padding: 5px;
@@ -66,6 +79,11 @@ h1 {
     float: center;
     clear: both;
     
+}
+
+h1:hover {
+    cursor:copy;
+    color:yellowgreen;
 }
 
 
@@ -84,6 +102,9 @@ p {
     clear: both;
 }
 
+a:hover {
+    cursor: wait;
+}
 
 img {
     width: 100%;
