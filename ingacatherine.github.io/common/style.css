@@ -1,0 +1,128 @@
+
+/* source darkmode/lightmode: https://www.geeksforgeeks.org/how-to-make-dark-mode-for-websites-using-html-css-javascript/# */
+
+.dark-mode {
+    background-image: url("../img/Scanned-Hand.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100%;
+    color: white;
+}
+
+.light-mode {
+    background-image: url("../img/Scanned-Hand-bright.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100%;
+    color: black;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+
+button {
+    appearance: auto;
+    text-rendering: auto;
+    border-radius: 20px;
+    font-size: 40pt;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+    color: green;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: help;
+    box-sizing: border-box;
+    background-color: blueviolet;
+    writing-mode: horizontal-tb !important;
+    margin: 0.2em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+button:hover {
+    cursor:grabbing;
+    background-color:yellow;
+}
+
+
+h1 {
+    display: block;
+    color:rgb(255, 66, 252);
+    font-family: karrik;
+    font-size: 80pt;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-align: center;
+    width: 90%;
+    padding: 5px;
+    border: 5px;
+    margin: 10px;
+    float: center;
+    clear: both;
+    
+}
+
+h1:hover {
+    cursor:copy;
+    color:yellowgreen;
+}
+
+
+p {
+    color:white;
+    font-family: karrik;
+    font-size: 24pt;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    line-height: 1.1;
+    width: 90%;
+    padding: 5px;
+    border: 5px;
+    margin: 20px;
+    float: left;    
+    clear: both;
+}
+
+a:hover {
+    cursor: wait;
+}
+
+img {
+    width: 100%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+.background {
+    background-image: url("../img/Scanned-Hand.png");
+    background-size: contain;
+    background-size: no-repeat;
+    width: 1920px;
+    height: 1080px;
+    border: solid 2px red;
+  }
+
+
+.
+

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <link rel="stylesheet" href="common/style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Ingaaaaaaaaaaaaaaa</title>
+  </head>
+ 
+  <body style="background-color: black;">
+     
+    <p>
+      <h1>Welcome to<br>Inga's GITHUB <br> Repository</h1>
+      <br>
+      <div class="parent" style="padding-right:600px;">
+        <div class="div1">
+      <p>EXERCISES<br><a href="../exercises/e2-3-markup-hypertext/index.html">Carl Dair Hyperlink Exercise</a><br><a href="../exercises/e4-5-css-letterforms/index.html">Moving CSS Letterforms Exercise</a></p>
+      <br><br>
+      <p>PROJECTS<br><a href="../projects/Project_2/index.html">Change Over Time</a><br><a href="../projects/Project_3-FLIES/index.html">Input/Output</a></p>
+    </div>
+      
+        <div class="div2" style="margin-left:300px; align-items:right;">
+          <br><br>
+          <button onclick="darkMode()">~°DARK°~</button>
+      <button onclick="lightMode()">~°LIGHT°~</button>
+      <script>
+          function darkMode() {
+              let element = document.body;
+              let content = document.getElementById("DarkModetext");
+              element.className = "dark-mode";
+              content.innerText = "Dark Mode is ON";
+          }
+          function lightMode() {
+              let element = document.body;
+              let content = document.getElementById("DarkModetext");
+              element.className = "light-mode";
+              content.innerText = "Dark Mode is OFF";
+          }
+      </script>
+        </div>
+        </div>
+      
+    </p>
+  </body>
+</html>
