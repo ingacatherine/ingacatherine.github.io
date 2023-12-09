@@ -1,112 +1,150 @@
-// When the user clicks on div, open the popup
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
+
+
+
+
+
+
+
+// Function to generate a random word from a given set of words
+function generateRandomWord(wordSet) {
+  const randomIndex = Math.floor(Math.random() * wordSet.length);
+  return wordSet[randomIndex];
 }
 
-function myFunction2() {
-  var popup = document.getElementById("myPopup2");
-  popup.classList.toggle("show");
+// Function to change the button text with a random word
+function changeButtonText(buttonId) {
+  const button = document.getElementById(buttonId);
+
+  // Define different sets of words for each button
+  let words;
+  switch (buttonId) {
+    case 'randomButton1':
+      words = ['ocean', 'world', 'tv show', 'university', 'universe'];
+      break;
+    case 'randomButton2':
+      words = ['two', 'fiftytwo', 'grandma', 'a tree', 'five'];
+      break;
+    case 'randomButton3':
+      words = ['a thousand', 'thirtytwo', 'a bird', 'sand', 'seven'];
+      break;
+    case 'randomButton4':
+      words = ['grass', 'the stars', 'fish', 'tiny rocks', 'bugs'];
+      break;
+    case 'randomButton5':
+      words = ['the waves', 'the sky', 'a telescope', 'a pile of leafs', 'plastic childrens microscopes'];
+      break;
+    case 'randomButton6':
+      words = ['jump', 'swim', 'carry each other', 'drive a yellow submarine', 'wander'];
+      break;
+    case 'randomButton7':
+      words = ['cows', 'trees', 'coral reefs', 'sea grass', 'grass', 'shark teeth'];
+      break;
+    case 'randomButton8':
+      words = ['shoe prints', 'finals', 'the dungeon', 'benefit street', 'trader joes', 'spider webs'];
+      break;
+    case 'randomButton9':
+      words = ['winter snow', 'norway', 'no way', 'autumn forests'];
+      break;
+    case 'randomButton10':
+      words = ['ocean', 'universe', 'sunset', 'marmelade', 'drinking fountain', 'cafeteria carpet', 'world'];
+      break;
+    case 'randomButton11':
+      words = ['sun', 'waves', 'sky', 'moon'];
+      break;
+    case 'randomButton12':
+      words = ['trees', 'coral reefs', 'small boats', 'big buildings', 'clouds'];
+      break;
+    case 'randomButton13':
+      words = ['new york city', 'cologne', 'the earth', 'belgrade', 'providence'];
+      break;
+    case 'randomButton14':
+      words = ['travel itinerary', 'dream i had last night', 'website i made', 'poem'];
+      break;
+    case 'randomButton15':
+      words = ['high five', 'adventure', 'fake lasagna', 'low five', 'hug'];
+      break;
+    case 'randomButton16':
+      words = ['biertrinken', 'ever', 'never', 'now', '?'];
+      break;
+    case 'randomButton17':
+      words = ['hug', 'nonsense', 'travel itinerary', 'dream', 'poem'];
+      break;
+    default:
+      words = ['defaultWord1', 'defaultWord2', 'defaultWord3', 'defaultWord4', 'defaultWord5'];
+  }
+
+  const randomWord = generateRandomWord(words);
+  button.textContent = randomWord;
 }
 
-function myFunction3() {
-  var popup = document.getElementById("myPopup3");
-  popup.classList.toggle("show");
+function getRandomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
 }
 
-function myFunction4() {
-  var popup = document.getElementById("myPopup4");
-  popup.classList.toggle("show");
+function changeRandomColor(buttonId) {
+  const button = document.getElementById(buttonId);
+  button.style.color = getRandomColor();
 }
 
-function myFunction() {
-  idArray = new Array()
+function whiteMode() {
   
+  changeTextColor('white');
+}
+
+function blackMode() {
+ 
+  changeTextColor('black');
+}
+
+function pukeMode() {
   
+  changeTextColor('burlywood');
+}
 
-  idArray [1] = "a winter fly // whispers its last words // in my ear // (written by Sanki)"
-  idArray [2] = "Do not kill the fly! // See how it wrings it’s hands. // It’s feet! // (written by Kobayashi Issa)"
-  idArray [3] = "As I wash my hands // The fly on the window sill // Is washing hers too // (written by Pete Crowther)"
-  idArray [4] = "Thirty day lifespans // Many generations plague // Til temperatures drop // (written by Kellykbb22)"
-  idArray [5] = "The greedy fruit fly // finds itself in a poo bag. // “Unlucky, I am!” // (written by Gavin Whyte)"
-
-  document.getElementById("select").onclick = myFunction;
-  randomParagraph = Math.floor(Math.random()*5);
-
-  document.getElementById("result").innerHTML = idArray[randomParagraph + 1];  
+function slimeMode() {
   
-  var idArray = string.split('~');
+  changeTextColor('greenyellow');
 }
 
-
-var object = document.getElementById('item');
-  object.onclick=function(){
-    var x = Math.floor(Math.random()*3000);
-    var y = Math.floor(Math.random()*3000);
-    object.style.top = x + 'px';
-    object.style.left = y + 'px';
-  };
-
-/* make fly move */
-  $(document).ready(function(){
-    animateIMG();
-    
-});
-
-function makeNewPosition(){
-    
-    // Get viewport dimensions (remove the dimension of the div)
-    var h = $(window).height() - 50;
-    var w = $(window).width() - 50;
-    
-    var nh = Math.floor(Math.random() * h);
-    var nw = Math.floor(Math.random() * w);
-    
-    return [nh,nw];    
-    
+function morningcoffeeMode() {
+  
+  changeTextColor('chocolate');
 }
 
-function animateIMG(){
-    var newq = makeNewPosition();
-    $('img').animate({ top: newq[0], left: newq[1] }, function(){
-      animateIMG();        
-    });
-    
-};
-
-
-
-/* const $bigBall = document.querySelector('.cursor__ball--big');
-const $smallBall = document.querySelector('.cursor__ball--small');
-const $hoverables = document.querySelectorAll('.hoverable');
-
-// Listeners
-document.body.addEventListener('mousemove', onMouseMove);
-for (let i = 0; i < $hoverables.length; i++) {
-  $hoverables[i].addEventListener('mouseenter', onMouseHover);
-  $hoverables[i].addEventListener('mouseleave', onMouseHoverOut);
+function octobersunsetMode() {
+  
+  changeTextColor('pink');
 }
 
-// Move the cursor
-function onMouseMove(e) {
-  TweenMax.to($bigBall, .4, {
-    x: e.pageX - 15,
-    y: e.pageY - 15
-  })
-  TweenMax.to($smallBall, .1, {
-    x: e.pageX - 5,
-    y: e.pageY - 7
-  })
+function heinekenbottleMode() {
+  
+  changeTextColor('green');
 }
 
-// Hover an element
-function onMouseHover() {
-  TweenMax.to($bigBall, .3, {
-    scale: 4
-  })
+function portfoliochairsMode() {
+  
+  changeTextColor('orange');
 }
-function onMouseHoverOut() {
-  TweenMax.to($bigBall, .3, {
-    scale: 1
-  })
-} */
+
+function risblueMode() {
+  
+  changeTextColor('blue');
+}
+
+function fireMode() {
+  
+  changeTextColor('red');
+}
+
+function changeTextColor(color) {
+  var elements = document.getElementsByTagName('*');
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].style.color = color;
+  }
+}
+
